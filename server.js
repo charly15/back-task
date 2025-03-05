@@ -39,6 +39,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 //app.use('/api/auth', authRoutes);
+app.use(cors({ origin: "https://taskapp-frontend.vercel.app" })); 
 
 
 app.get('/', (req, res) => {
