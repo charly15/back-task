@@ -3,6 +3,12 @@ const admin = require("firebase-admin");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 
+const corsOptions = {
+  origin: ['https://front-task-beta.vercel.app'], 
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+};
+
 const serviceAccount = {
   type: process.env.TYPE,
   project_id: process.env.PROJECT_ID,
