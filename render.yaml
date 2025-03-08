@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: mi-express-api
+    env: node
+    repo: https://github.com/charly15/back-task
+    branch: main
+    startCommand: node index.js
+    envVars:
+      - key: PORT
+        value: 5000
